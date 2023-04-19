@@ -18,26 +18,61 @@
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
+<form id="Formulario_suscripcion">
+    <p>
+        Nombre:<input type="text" name="Nombre" placeholder="Nombre"></input>
+    </p>
+    <p>
+        Apellido:<input type="text" name="Apellido" placeholder="Apellido"></input>
+    </p>
+    <p>
+        Sexo:
+        <br>
+        Masculino <input type="radio" name="Sexo" value =masculino>
+        <br>
+        Femenino  <input type="radio" name="Sexo" value =femenino>
+    </p>
+    <p>
+        Edad:<input type="number" name="edad"></input>
+    </p>
+    <p>
+        Email:<input type="Email" name="Email"placeholder="Email@dominio.com"></input>
+    </p>
+    <p>
+        Usuario:<input type="text" name="Usuario"placeholder="Usuario"></input>
+    </p>
+    <p>
+        Password:<input type="Password" name="Pass" placeholder="Password"></input>
+    </p>
+    <p>
+        Confirmar Password:<input type="Password" name="Confirmar_Password" placeholder="Password"></input>
+    </p>
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
+    <fieldset>
+        <legend>Información de servicio:</legend>
+        <p>
+            Free <input type="radio" name="Tipo_servicio" value="free">
+            Standard <input type="radio" name="Tipo_servicio" value="Standard">
+            Premium <input type="radio" name="Tipo_servicio" value="Premium">
+        </p>
+    </fieldset>
 
-Agregue un comentario:
+    <p>
+        Tema:
+        <br>
+        Política <input type="checkbox" name="Tema" value="Politica">
+        Negocios <input type="checkbox" name="Tema" value="Negocios">
+        Tecnología <input type="checkbox" name="Tema" value="Tecnologia">
+        Salud <input type="checkbox" name="Tema" value="Salud">
+    </p>
 
-Boton de Enviar
-
-
+    <p>
+        Agregue un comentario:
+        <textarea></textarea>
+    </p>
+    <p>
+        <button> Boton de Enviar </button>
+    </p>
+</form>
 </body>
 </html>
