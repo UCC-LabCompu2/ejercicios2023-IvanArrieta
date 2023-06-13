@@ -7,7 +7,7 @@
     <link href="miEstilo.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="misFunciones.js"></script>
 </head>
-<body class="body-num">
+<body class="body-num" onload="cargarLocalStorage() ">
 
 <div class="centrado div-conver">
     <h1>Conversor de Unidades</h1>
@@ -22,7 +22,7 @@
                 <option value="unid_pie">Pies</option>
                 <option value="unid_pulgadas">Pulgadas</option>
             </select>
-            <button>
+            <button onclick="guardarLocalStorage()">
                 Segunda Web!
             </button>
         </p>
