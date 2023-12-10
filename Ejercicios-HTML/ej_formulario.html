@@ -20,55 +20,56 @@
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
 <form id="Formulario_suscripcion">
     <p>
-        Nombre:<input type="text" name="Nombre" placeholder="Nombre"></input>
+       <label for="nombre"> Nombre: </label> <input type="text" name="Nombre" placeholder="Nombre" id="nombre"></input>
     </p>
     <p>
-        Apellido:<input type="text" name="Apellido" placeholder="Apellido"></input>
+        <label for="apellido"> Apellido: </label><input type="text" name="Apellido" placeholder="Apellido" id="apellido"></input>
     </p>
     <p>
         Sexo:
         <br>
-        Masculino <input type="radio" name="Sexo" value =masculino>
+        <label for="masculino">Masculino</label> <input type="radio" name="Sexo" value =masculino id="masculino">
         <br>
-        Femenino  <input type="radio" name="Sexo" value =femenino>
+        <label for="femenino">femenino</label>  <input type="radio" name="Sexo" value =femenino id="femenino">
     </p>
     <p>
-        Edad:<input type="number" name="edad"></input>
+        <label for="edad">Edad:</label><input type="number" name="edad" id="edad"></input>
     </p>
     <p>
-        Email:<input type="Email" name="Email"placeholder="Email@dominio.com"></input>
+        <label for="email">Email:</label><input type="Email" name="Email"placeholder="Email@dominio.com" id="email"></input>
     </p>
     <p>
-        Usuario:<input type="text" name="Usuario"placeholder="Usuario"></input>
+        <label for="usuario">Usuario:</label><input type="text" name="Usuario"placeholder="Usuario" id="usuario"></input>
     </p>
     <p>
-        Password:<input type="Password" name="Pass" placeholder="Password"></input>
+        <label for="password">Password:</label><input type="Password" name="Pass" placeholder="Password" id="password"></input>
     </p>
     <p>
-        Confirmar Password:<input type="Password" name="Confirmar_Password" placeholder="Password"></input>
+        <label for="confirmarpassword">Confirmar Password:</label><input type="Password" name="Confirmar_Password" placeholder="Password" id="confirmarpassword"></input>
     </p>
 
     <fieldset>
         <legend>Información de servicio:</legend>
         <p>
-            Free <input type="radio" name="Tipo_servicio" value="free">
-            Standard <input type="radio" name="Tipo_servicio" value="Standard">
-            Premium <input type="radio" name="Tipo_servicio" value="Premium">
+            <label for="free">Free</label> <input type="radio" name="Tipo_servicio" value="free" id="free">
+            <label for="standard">Standard</label><input type="radio" name="Tipo_servicio" value="Standard" id="standard">
+            <label for="premium">Premium</label><input type="radio" name="Tipo_servicio" value="Premium" id="premium">
         </p>
     </fieldset>
 
     <p>
-        Tema:
-        <br>
-        Política <input type="checkbox" name="Tema" value="Politica">
-        Negocios <input type="checkbox" name="Tema" value="Negocios">
-        Tecnología <input type="checkbox" name="Tema" value="Tecnologia">
-        Salud <input type="checkbox" name="Tema" value="Salud">
+        <label for="tema">Tema:</label>
+        <select id="tema">
+            <option value="politica">Politica</option>
+            <option value="negocio">Negocio</option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="salud">Salud</option>
+        </select>
     </p>
 
     <p>
-        Agregue un comentario:
-        <textarea></textarea>
+        <label for="comentario">Agregue un comentario:</label>
+        <textarea id="comentario"></textarea>
     </p>
     <p>
         <button> Boton de Enviar </button>
